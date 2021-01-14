@@ -10,7 +10,7 @@ The separate parts:
 ```
 
 ```
-_____ net:
+A2C net:
 ```
 
 ```
@@ -19,7 +19,7 @@ _____ net:
 ```
 
 ```
-____ net:
+A2C net:
 ```
 
 ```
