@@ -4,9 +4,8 @@ from alg_net import ALGNet
 
 
 def get_action(state, net):
-    state = torch.tensor([state])
-    q_values = net(state)
-    _, action = torch.max(q_values, dim=1)
+    value, policy_dist = net(state)
+    _, action = torch.max(policy_dist, dim=1)
     return int(action.item())
 
 

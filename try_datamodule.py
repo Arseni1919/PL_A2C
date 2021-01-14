@@ -7,5 +7,3 @@ from CONSTANTS import *
 # for i in dmodule.train_dataloader():
 #     print(i)
 #     break
-
-print(type(EPS_END))

@@ -6,27 +6,20 @@ from alg_dataset import ALGDataset
 
 class ALGDataModule(pl.LightningDataModule):
 
-    def __init__(self, dataset):
+    def __init__(self, net):
         super().__init__()
-        self.dataset = dataset
         self.env = gym.make(ENV)
+        self.dataset = ALGDataset(net, self.env)
 
-    def prepare_data(self):
-        state = self.env.reset()
-        for i in range(WARM_START_STEPS):
-            action = self.env.action_space.sample()
-            new_state, reward, done, _ = self.env.step(action)
-            experience = Experience(state, action, reward, done, new_state)
-            self.dataset.append(experience)
-            state = self.env.reset() if done else new_state
-        print('--- finished prepare_data ---')
+    def prepare_data(self, *args, **kwargs):
+        pass
 
     def setup(self, stage=None):
         # transforms
         pass
 
     def train_dataloader(self):
-        return DataLoader(self.dataset, batch_size=BATCH_SIZE)
+        return DataLoader(self.dataset)
 
     def test_dataloader(self, *args, **kwargs) -> Union[DataLoader, List[DataLoader]]:
         pass
