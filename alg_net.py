@@ -10,12 +10,11 @@ class ALGNet(nn.Module):
 
     def __init__(self, obs_size: int, n_actions: int):
         super(ALGNet, self).__init__()
-        hidden_size = 256
-        self.critic_linear1 = nn.Linear(obs_size, hidden_size)
-        self.critic_linear2 = nn.Linear(hidden_size, 1)
+        self.critic_linear1 = nn.Linear(obs_size, HIDDEN_SIZE)
+        self.critic_linear2 = nn.Linear(HIDDEN_SIZE, 1)
 
-        self.actor_linear1 = nn.Linear(obs_size, hidden_size)
-        self.actor_linear2 = nn.Linear(hidden_size, n_actions)
+        self.actor_linear1 = nn.Linear(obs_size, HIDDEN_SIZE)
+        self.actor_linear2 = nn.Linear(HIDDEN_SIZE, n_actions)
         self.n_actions = n_actions
         self.obs_size = obs_size
         self.entropy_term = 0

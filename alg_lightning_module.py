@@ -39,8 +39,13 @@ class ALGLightningModule(pl.LightningModule):
 
         advantage = Qvals - values
         actor_loss = (-log_probs * advantage).mean()
+
+        values, _ = self.net(states.numpy())
+        values = torch.FloatTensor(values.squeeze())
+        advantage = Qvals - values
+        # critic_loss = F.mse_loss(values, Qvals)
         critic_loss = 0.5 * advantage.pow(2).mean()
-        ac_loss = actor_loss + critic_loss # + 0.001 * self.net.entropy_term
+        ac_loss = actor_loss + critic_loss + 0.001 * self.net.entropy_term
 
         # tr = np.sum(rewards)
         # self.log('total_reward', tr)

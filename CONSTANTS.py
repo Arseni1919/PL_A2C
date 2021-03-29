@@ -17,13 +17,13 @@ import gym
 ENV = "CartPole-v0"  # gym environment tag
 # ENV = 'LunarLander-v2'
 # ENV='MountainCar-v0'
-NUMBER_OF_GAMES = 5
+NUMBER_OF_GAMES = 10
 SAVE_RESULTS = True
 # ------------------------------------------- #
 # ------------------FOR ALG:----------------- #
 # ------------------------------------------- #
 
-MAX_EPOCHS = 500  # maximum epoch to execute
+MAX_EPOCHS = 1000  # maximum epoch to execute
 BATCH_SIZE = 128  # size of the batches
 MAX_LENGTH_OF_A_GAME = 10000
 LR = 3e-4  # learning rate
@@ -32,3 +32,5 @@ ENTROPY_BETA = 0.01
 REWARD_STEPS = 4
 CLIP_GRAD = 0.1
 VAL_CHECKPOINT_INTERVAL = 10
+HIDDEN_SIZE = 256
+
