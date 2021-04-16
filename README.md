@@ -12,8 +12,8 @@ The preceding algorithm is an outline and similar to those that are usually prin
 in research papers. In practice, some considerations are as follows:
 
 ![1](pics/alg2.png)
-![1](pics/alg3.png)
-![1](pics/alg4.png)
+![2](pics/alg3.png)
+![3](pics/alg4.png)
 
 The separate parts:
 - Data module
