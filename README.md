@@ -1,4 +1,17 @@
 # My A2C implementation as PL system
+
+## The Algorithm
+
+From - [2 - A2C implementation from Deep-Reinforcement-Learning-Hands-On-Second-Edition (pages 315-317)](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On-Second-Edition/blob/master/Chapter12/02_pong_a2c.py)
+
+From a training point of view, we complete these steps:
+
+![The Algorithm](pics/alg1.png)
+
+The preceding algorithm is an outline and similar to those that are usually printed
+in research papers. In practice, some considerations are as follows:
+
+
 The separate parts:
 - Data module
 - Neural Nets
