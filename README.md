@@ -47,3 +47,4 @@ A2C net:
 - [A2C `higgsfield` implementation](https://github.com/higgsfield/RL-Adventure-2/blob/master/1.actor-critic.ipynb)
 - [REINFORCE+A2C (google colab)](https://colab.research.google.com/github/yfletberliac/rlss-2019/blob/master/labs/DRL.01.REINFORCE%2BA2C.ipynb#scrollTo=aNH3udIuyFgK)
 - [Chris Yoon](https://towardsdatascience.com/understanding-actor-critic-methods-931b97b6df3f)
+- [Optimization In Pytorch-Lightning](https://pytorch-lightning.readthedocs.io/en/latest/common/optimizers.html#automatic-optimization)
