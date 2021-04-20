@@ -14,8 +14,8 @@ import matplotlib.pyplot as plt
 from collections import namedtuple, deque
 import gym
 
-# ENV = "CartPole-v0"  # gym environment tag
-ENV = 'LunarLander-v2'
+ENV = "CartPole-v0"  # gym environment tag
+# ENV = 'LunarLander-v2'
 # ENV='MountainCar-v0'
 NUMBER_OF_GAMES = 10
 SAVE_RESULTS = True
