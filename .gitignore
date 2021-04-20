@@ -6,5 +6,6 @@ env
 .coverage
 .idea
 lightning_logs
+logs
 .ckpt
 example.ckpt

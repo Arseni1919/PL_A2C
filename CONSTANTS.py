@@ -14,8 +14,8 @@ import matplotlib.pyplot as plt
 from collections import namedtuple, deque
 import gym
 
-ENV = "CartPole-v0"  # gym environment tag
-# ENV = 'LunarLander-v2'
+# ENV = "CartPole-v0"  # gym environment tag
+ENV = 'LunarLander-v2'
 # ENV='MountainCar-v0'
 NUMBER_OF_GAMES = 10
 SAVE_RESULTS = True
@@ -24,11 +24,11 @@ SAVE_RESULTS = True
 # ------------------------------------------- #
 
 MAX_EPOCHS = 1000  # maximum epoch to execute
-BATCH_SIZE = 128  # size of the batches
+# BATCH_SIZE = 128  # size of the batches
 MAX_LENGTH_OF_A_GAME = 10000
-LR = 3e-4  # learning rate
+LR = 3e-5  # learning rate
 GAMMA = 0.99  # discount factor
-ENTROPY_BETA = 0.01
+ENTROPY_BETA = 0.001
 REWARD_STEPS = 4
 CLIP_GRAD = 0.1
 VAL_CHECKPOINT_INTERVAL = 10

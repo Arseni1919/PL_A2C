@@ -12,7 +12,9 @@ class ALGCallback(Callback):
     def on_train_end(self, trainer, pl_module):
         # print('--- training ends ---')
         if SAVE_RESULTS:
-            torch.save(pl_module.net.state_dict(), "example.ckpt")
+            filename = "example.ckpt"
+            torch.save(pl_module.net.state_dict(), filename)
+            print(f'--- The weights are saved to: {filename} ---')
 
     def on_train_epoch_end(self, trainer, pl_module, outputs):
         """Called when the train epoch ends."""

@@ -8,8 +8,9 @@ class ALGDataModule(pl.LightningDataModule):
 
     def __init__(self, net):
         super().__init__()
+        self.net = net
         self.env = gym.make(ENV)
-        self.dataset = ALGDataset(net, self.env)
+        self.dataset = ALGDataset(self.net, self.env)
 
     def prepare_data(self, *args, **kwargs):
         pass

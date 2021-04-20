@@ -4,10 +4,12 @@ from alg_net import ALGNet
 
 
 def get_action(state, net):
-    value, policy_dist = net(state)
-    _, action = torch.max(policy_dist, dim=1)
-    return int(action.item())
-
+    _, policy_dist = net(np.expand_dims(state, axis=0))
+    # _, action = torch.max(policy_dist.squeeze(), dim=1)
+    # return int(action.item())
+    action = torch.argmax(policy_dist.squeeze()).item()
+    # print(action)
+    return action
 
 def play(times: int = 1):
     env = gym.make(ENV)
