@@ -77,10 +77,10 @@ A2C net:
 ## Thanks to:
 
 - [1 - Deriving Policy Gradients and Implementing REINFORCE](https://medium.com/@thechrisyoon/deriving-policy-gradients-and-implementing-reinforce-f887949bd63)
-- [2 - A2C implementation from Deep-Reinforcement-Learning-Hands-On-Second-Edition (pages 315-317)](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On-Second-Edition/blob/master/Chapter12/02_pong_a2c.py)
-- [A2C `higgsfield` implementation](https://github.com/higgsfield/RL-Adventure-2/blob/master/1.actor-critic.ipynb)
-- [REINFORCE+A2C (google colab)](https://colab.research.google.com/github/yfletberliac/rlss-2019/blob/master/labs/DRL.01.REINFORCE%2BA2C.ipynb#scrollTo=aNH3udIuyFgK)
-- [Chris Yoon](https://towardsdatascience.com/understanding-actor-critic-methods-931b97b6df3f)
+- [2 - A2C `higgsfield` implementation](https://github.com/higgsfield/RL-Adventure-2/blob/master/1.actor-critic.ipynb)
+- [3 - A2C implementation from Deep-Reinforcement-Learning-Hands-On-Second-Edition (pages 315-317)](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On-Second-Edition/blob/master/Chapter12/02_pong_a2c.py)
+- [4 - REINFORCE+A2C (google colab)](https://colab.research.google.com/github/yfletberliac/rlss-2019/blob/master/labs/DRL.01.REINFORCE%2BA2C.ipynb#scrollTo=aNH3udIuyFgK)
+- [5 - Chris Yoon](https://towardsdatascience.com/understanding-actor-critic-methods-931b97b6df3f)
 - [Optimization In Pytorch-Lightning](https://pytorch-lightning.readthedocs.io/en/latest/common/optimizers.html#automatic-optimization)
 - [Adam Grad - page 36 (Training NNs from Stanford's course)](http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture7.pdf)
 - [Entropy (information theory)](https://en.wikipedia.org/wiki/Entropy_(information_theory))
